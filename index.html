@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hugo Pereira - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            
+            <div class="email">hugopereira.contato@gmail.com</div>
+            <div class="logo">
+               <img src="https://raw.githubusercontent.com/your-username/your-repo/main/logo.png" alt="HP">
+           </div>
+            <div class="social-links">
+                <a href="#" target="_blank">LinkedIn</a>
+                <a href="#" target="_blank">Github</a>
+                <a href="#" target="_blank">Behance</a>
+            </div>
+            <button class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+         <div class="perfil-wrapper">
+            <div class="profile-image">
+                <img src="images/githubb.png" alt="Hugo Pereira">
+            </div>
+            <div class="hero-content">
+               <div class="ballon-name">
+                  <h1 class="nome">Hugo Pereira 👋</h1>
+               </div>
+            </div>
+         </div>
+
+                <h2>Desenvolvedor Front End,<br>
+                    Designer UI/UX e <span>Artista Pixel Art</span></h2>
+
+                  <button class="contact-btn">Contatar</button>
+
+                <section class="caroulseu-section">
+                  <div class="carousel">
+                     <div class="carousel-container">
+                           <div class="carousel-slide">
+                              <p>"Desenvolvendo interfaces intuitivas e experiências memoráveis"</p>
+                           </div>
+                           <div class="carousel-slide">
+                              <p>"Transformando ideias em designs funcionais e elegantes"</p>
+                           </div>
+                           <div class="carousel-slide">
+                              <p>"Criando arte digital pixel a pixel"</p>
+                           </div>
+                     </div>
+                     <div class="carousel-controls">
+                           <div class="carousel-dot active"></div>
+                           <div class="carousel-dot"></div>
+                           <div class="carousel-dot"></div>
+                     </div>
+                  </section>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <p>Sou um desenvolvedor Front-end apaixonado por criar experiências digitais únicas e intuitivas. Com experiência em UI/UX Design e Pixel Art, combino habilidades técnicas e criativas para desenvolver soluções web inovadoras.</p>
+        </section>
+
+        <section id="skills">
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML5</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>CSS3</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-js"></i>
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-react"></i>
+                    <h3>React</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>UI/UX Design</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-pencil-alt"></i>
+                    <h3>Pixel Art</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Projeto 1">
+                    <h3>Projeto 1</h3>
+                    <p>Descrição do projeto 1</p>
+                    <div class="project-links">
+                        <a href="#" target="_blank">Ver Projeto</a>
+                        <a href="#" target="_blank">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Projeto 2">
+                    <h3>Projeto 2</h3>
+                    <p>Descrição do projeto 2</p>
+                    <div class="project-links">
+                        <a href="#" target="_blank">Ver Projeto</a>
+                        <a href="#" target="_blank">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Projeto 3">
+                    <h3>Projeto 3</h3>
+                    <p>Descrição do projeto 3</p>
+                    <div class="project-links">
+                        <a href="#" target="_blank">Ver Projeto</a>
+                        <a href="#" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contato</h2>
+            <div class="contact-container">
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit">Enviar Mensagem</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Hugo Pereira. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+        // Previous JavaScript remains the same
+
+        // Carousel functionality
+        const carousel = document.querySelector('.carousel-container');
+        const slides = document.querySelectorAll('.carousel-slide');
+        const dots = document.querySelectorAll('.carousel-dot');
+        let currentSlide = 0;
+
+        function updateCarousel() {
+            carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentSlide);
+            });
+        }
+
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                currentSlide = index;
+                updateCarousel();
+            });
+        });
+
+        // Auto-advance carousel
+        setInterval(() => {
+            currentSlide = (currentSlide + 1) % slides.length;
+            updateCarousel();
+        }, 5000);
+    </script>
+</body>
+</html>
