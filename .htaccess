@@ -1,0 +1,4 @@
+# Configurações do .htaccess
+AddType application/javascript .js
+
+# Outras configurações do servidor podem estar aqui
