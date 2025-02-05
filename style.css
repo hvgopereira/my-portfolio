@@ -25,6 +25,11 @@ body {
 }
 
 /* Header Styles */
+.logo img {
+   width: 80px;
+}
+
+
 header {
    position: fixed;
    top: 0;
