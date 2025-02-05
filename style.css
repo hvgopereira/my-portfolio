@@ -21,7 +21,7 @@ body {
    color: var(--text-color);
    line-height: 1.6;
 
-   overflow: hidden;
+   overflow-x: hidden;
 }
 
 /* Header Styles */
