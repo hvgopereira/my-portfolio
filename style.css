@@ -5,7 +5,7 @@
    --text-color-muted: #888888;
    --background-color: #000000;
    --card-background: #111111;
-   --hover-color: #1a1a1a;
+   --hover-color: #111111;
    --border-color: #1e1e1e;
 }
 
@@ -25,6 +25,27 @@ body {
 }
 
 /* Header Styles */
+
+
+
+.mail-copy {
+   padding: 0.4rem 0.5rem;
+   border-radius: 100%;
+   border: none;
+
+   cursor: pointer;
+
+   transition: all 0.3s ease-in-out;
+}
+
+.mail-copy:hover {
+   background-color: #0066ff;
+   color: white;
+}
+
+.mail-copy:active {
+   transform: scale(1.1);
+}
 
 
 .logo img {
@@ -68,6 +89,12 @@ nav {
 }
 
 .email {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   gap: 0.5rem;
+
    color: var(--text-color-muted);
    font-size: 0.9rem;
 }
@@ -124,7 +151,7 @@ section {
    animation: float 3s ease-in-out infinite;
    position: absolute;
    top: 91%;
-   left: 99%;
+   left: 110%;
   
    background: white;
    border-radius: 30px;
@@ -159,7 +186,7 @@ section {
 
 
 .profile-image img {
-   margin-top: 10rem;
+   margin-top: 9rem;
    width: 150px;
    height: 150px;
    border-radius: 50%;
@@ -196,13 +223,33 @@ section {
    font-weight: normal;
 }
 
+.btns-front {
+   display: flex;
+   gap: 0.7rem;
+}
+
 .contact-btn {
    padding: 1.2rem 2.6rem;
    font-size: 1rem;
    background-color: rgb(17, 17, 17);
    color: var(--text-color);
    border: 2px solid var(--hover-color);
-   border-radius: 8px;
+   border-radius: 13px;
+   cursor: pointer;
+   transition: all 0.3s;
+   margin-top: 2rem;
+   margin-bottom: 3rem;
+
+   font-family: "Inter";
+}
+
+.cv-btn {
+   padding: 1.2rem 1.5rem;
+   font-size: 1rem;
+   background-color: rgb(17, 17, 17);
+   color: var(--text-color);
+   border: 2px solid var(--hover-color);
+   border-radius: 13px;
    cursor: pointer;
    transition: all 0.3s;
    margin-top: 2rem;
@@ -216,6 +263,12 @@ section {
    border-color: var(--secondary-color);
 }
 
+.cv-btn:hover {
+   background-color: var(--hover-color);
+   border-color: var(--secondary-color);
+
+}
+
 /* Carousel Styles */
 .carousel.sections {
    width: 100%;
@@ -225,11 +278,14 @@ section {
    width: 100vw;
    max-width: 100%;
    margin: 0 auto;
-   background: #1a1a1a;
+   background: #111111;
    border-radius: 12px;
    padding: 2rem;
    position: relative;
    overflow: hidden;
+
+   justify-content: center;
+   align-items: center;
 }
 
 .carousel-container {
@@ -239,9 +295,13 @@ section {
 
 .carousel-slide {
    min-width: 100%;
-   padding: 1rem;
+   /* padding: 1rem; */
    text-align: center;
    color: var(--text-color-muted);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 1rem;
 }
 
 .carousel-controls {
@@ -249,12 +309,12 @@ section {
    display: none;
    justify-content: center;
    gap: 1rem;
-   margin-top: 1.5rem;
+   /* margin-top: 1.5rem; */
 }
 
 .carousel-dot {
-   width: 8px;
-   height: 8px;
+   width: 4px;
+   height: 4px;
    border-radius: 50%;
    background-color: var(--text-color-muted);
    cursor: pointer;

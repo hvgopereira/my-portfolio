@@ -11,8 +11,12 @@
 <body>
     <header>
         <nav>
-            
-            <div class="email">hugopereira.contato@gmail.com</div>
+
+            <div class="email">
+               <span id="email">hugopereira.contato@gmail.com</span>
+               <button class="mail-copy" onclick="copyEmail()"><i class="fa-solid fa-copy"></i></button>
+            </div>
+
             <div class="logo">
                <img src="images/logohugo.png" alt="HP">
            </div>
@@ -45,14 +49,20 @@
                 <h2>Desenvolvedor Front End,<br>
                     Designer UI/UX e <span>Artista Pixel Art</span></h2>
 
-                  <button class="contact-btn">Contatar</button>
+                  <div class="btns-front">
+                     <button class="contact-btn" style="display: flex; gap: 7px; justify-content: center; align-items: center;">Contatar <i class="fa-solid fa-envelope" style="color: rgb(211, 211, 211); font-size: 1.2rem;"></i></button>
+                     <button class="cv-btn" style="display: flex; gap: 7px; justify-content: center; align-items: center;">CV <i class="fa-solid fa-file" style="color: rgb(211, 211, 211); font-size: 1.2rem;"></i> </button>
+                  </div>
 
                 <section class="caroulseu-section">
                   <div class="carousel">
                      <div class="carousel-container">
                            <div class="carousel-slide">
-                              <p>"Desenvolvendo interfaces intuitivas e experiências memoráveis"</p>
+                              <img style="width: 6rem;" src="images/frog-idea-2v.gif" alt="">
+                              <img style="width: 6rem;" src="images/frog-idea-2v.gif" alt="">
+                              <img style="width: 6rem;" src="images/frog-idea-2v.gif" alt="">
                            </div>
+
                            <div class="carousel-slide">
                               <p>"Transformando ideias em designs funcionais e elegantes"</p>
                            </div>
@@ -161,8 +171,18 @@
         <p>&copy; 2024 Hugo Pereira. Todos os direitos reservados.</p>
     </footer>
 
-    <script src="main.js" type="module">
+    <script src="main.js"></script>
+      <script>
         // Previous JavaScript remains the same
+        function copyEmail() {
+         var emailText = document.getElementById("email").innerText;
+
+         navigator.clipboard.writeText(emailText).then(function() {
+               alert("Email copiado: " + emailText);
+         }, function(err) {
+               console.error("Erro ao copiar o email: ", err);
+         });
+      }
 
         // Carousel functionality
         const carousel = document.querySelector('.carousel-container');
@@ -188,8 +208,12 @@
         setInterval(() => {
             currentSlide = (currentSlide + 1) % slides.length;
             updateCarousel();
-        }, 5000);
-    </script>
+        }, 10000);
+
+         // Função para copiar o email
+    // Função para copiar o email
+    
+        
    </script>
 </body>
 </html>
