@@ -1,4 +1,4 @@
-# Meu Portfólio (60%..) 👨‍💻
+# Meu Portfólio (50%..) 👨‍💻
 
 Bem-vindo ao meu portfólio online! Este site foi desenvolvido com o objetivo de apresentar minhas habilidades e projetos de maneira moderna, minimalista e elegante.
 
