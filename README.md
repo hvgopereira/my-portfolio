@@ -33,9 +33,7 @@ O design do site foi cuidadosamente planejado para proporcionar uma experiência
  </section>
  
 ##
- 
-<h5 align="center"> CRUD em desenvolvimento (90%...) </h6>
- 
+
 
 <img title="Logo Hugo Pereira" src="https://github.com/hvgopereira/netflix-remake/assets/162385532/1063be5e-a9fa-4aba-a6e5-ff5a99957761" min-width="60px" max-width="60px" width="60px" align="right" alt="Logo Hugo Pereira"></img>
 
@@ -44,11 +42,12 @@ O design do site foi cuidadosamente planejado para proporcionar uma experiência
 
 
 <section align="center" style="display: inline-block; ">
-  <strong> Usado: </strong>
+  <strong> Usado: </strong>  
   <img title="HTML5" align="center" alt="hugo-HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
-  <img title="Php" align="center" alt="hugo-HTML" height="50" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg">
   <img title="CSS3" align="center" alt="hugo-CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+  <img title="Php" align="center" alt="hugo-HTML" height="50" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg">
   <img title="JavaScript" align="center" alt="hugo-JS" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg">
+  <img title="JavaScript" align="center" alt="hugo-JS" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg">
 </section>
 
 
