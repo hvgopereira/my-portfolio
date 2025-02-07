@@ -7,7 +7,7 @@
    --card-background: #111111;
    --hover-color: #111111;
    --border-color: #1e1e1e;
-   --carousel-color: #08080a;
+   --carousel-color: #0f0f11;
 }
 
 * {
@@ -144,7 +144,7 @@ section {
    /* gap: 1rem; */
    /* padding: 2rem; */
    max-width: 1000px;
-   max-height: 780px;
+   max-height: 830px;
    margin: 0 auto;
 }
 
@@ -256,9 +256,10 @@ main .dev-title .frog-icon {
    height: 3.5rem;
 
    font-size: 1rem;
-   background-color: rgb(17, 17, 17);
+   /* background-color: rgb(17, 17, 17); */
+   background-color: #0f0f11;
    color: var(--text-color);
-   border: 2px solid var(--hover-color);
+   border: 2px solid #303036;
    border-radius: 13px;
    cursor: pointer;
    transition: all 0.3s;
@@ -275,7 +276,8 @@ main .dev-title .frog-icon {
    font-size: 1rem;
    background-color: rgb(17, 17, 17);
    color: var(--text-color);
-   border: 2px solid var(--hover-color);
+   /* border: 2px solid var(--hover-color); */
+   border: 2px solid #303036;
    border-radius: 13px;
    cursor: pointer;
    transition: all 0.3s;
