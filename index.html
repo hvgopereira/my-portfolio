@@ -56,10 +56,11 @@
 
                 <section class="caroulseu-section">
                   <div class="carousel">
-                     <div class="carousel-container">
+                     <div class="carousel-container" id="carousel-container">
                            <div class="carousel-slide">
                               <img style="width: 6rem;" src="images/caipira_sprite_female2.gif" alt="">
                               <img style="width: 6rem;" src="images/caipira_sprite4.gif" alt="">
+                              <img style="width: 6rem;" src="images/bobodacorte_HD2.gif" alt="">
                               <img style="width: 8rem;" src="images/kakashi-sprite-anim1.gif" alt="">
                               <img style="width: 7rem;" src="images/slime_padrao.gif" alt="">
                               <img style="width: 6rem;" src="images/book-of-grass_HD.gif" alt="">
@@ -195,34 +196,62 @@
       }
 
         // Carousel functionality
-        const carousel = document.querySelector('.carousel-container');
-        const slides = document.querySelectorAll('.carousel-slide');
-        const dots = document.querySelectorAll('.carousel-dot');
-        let currentSlide = 0;
+      //SLIDE
+      //   const carousel = document.querySelector('.carousel-container');
+      //   const slides = document.querySelectorAll('.carousel-slide');
+      //   const dots = document.querySelectorAll('.carousel-dot');
+      //   let currentSlide = 0;
 
-        function updateCarousel() {
-            carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
-            dots.forEach((dot, index) => {
-                dot.classList.toggle('active', index === currentSlide);
+      //   function updateCarousel() {
+      //       carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
+      //       dots.forEach((dot, index) => {
+      //           dot.classList.toggle('active', index === currentSlide);
+      //       });
+      //   }
+
+      //   dots.forEach((dot, index) => {
+      //       dot.addEventListener('click', () => {
+      //           currentSlide = index;
+      //           updateCarousel();
+      //       });
+      //   });
+
+      //   // Auto-advance carousel
+      //   setInterval(() => {
+      //       currentSlide = (currentSlide + 1) % slides.length;
+      //       updateCarousel();
+      //   }, 10000);
+
+      //INFINITE LOOP
+
+      window.onload = () => {
+    const carouselContainer = document.getElementById('carousel-container');
+    const slides = Array.from(carouselContainer.children);
+
+    // Função para clonar os slides até preencher o container
+    const cloneSlides = () => {
+        const initialWidth = carouselContainer.scrollWidth;
+        let currentWidth = initialWidth;
+
+        // Clonar os slides até que a largura total seja pelo menos pelo tamanho definido
+        while (currentWidth < initialWidth * 7) {
+            slides.forEach(slide => {
+                const clone = slide.cloneNode(true);
+                carouselContainer.appendChild(clone);
             });
+            currentWidth = carouselContainer.scrollWidth;
         }
+    };
 
-        dots.forEach((dot, index) => {
-            dot.addEventListener('click', () => {
-                currentSlide = index;
-                updateCarousel();
-            });
-        });
+    // Inicialmente clonar os slides
+    cloneSlides();
 
-        // Auto-advance carousel
-        setInterval(() => {
-            currentSlide = (currentSlide + 1) % slides.length;
-            updateCarousel();
-        }, 10000);
+    // Ajustar a duração da animação de acordo com a nova largura
+    const totalWidth = carouselContainer.scrollWidth;
+    const animationDuration = totalWidth / 60; // Ajuste a velocidade conforme necessário
+    carouselContainer.style.animationDuration = `${animationDuration}s`;
+};
 
-         // Função para copiar o email
-    // Função para copiar o email
-    
         
    </script>
 </body>

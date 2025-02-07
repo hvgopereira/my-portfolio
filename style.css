@@ -305,31 +305,27 @@ main .dev-title .frog-icon {
 }
 
 .carousel {
-   width: 100vw;
-   margin: 1rem 0 5rem 0;
-   max-width: 100%;
-   margin: 0 auto;
-   /* background: var(--primary-color); */
-   background: var(--carousel-color);
-   border-radius: 12px;
-   padding: 2rem;
-   position: relative;
+   width: 100%;
    overflow: hidden;
-
+   display: flex;
    justify-content: center;
    align-items: center;
+   background: var(--carousel-color);
+   /* border-radius: 12px; */
+   /* padding: 2rem; */
+   position: relative;
+
 }
 
 .carousel-container {
    display: flex;
-   transition: transform 0.5s ease;
+   align-items: center;
+   width: max-content;
+   animation: scroll 60s linear infinite;
 }
 
 .carousel-slide {
-   min-width: 100%;
-   /* padding: 1rem; */
-   text-align: center;
-   color: var(--text-color-muted);
+   flex: 0 0 auto;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -670,4 +666,13 @@ section.animate {
    100% {
        transform: translate(-50%, -50%) translateY(0);
    }
+}
+
+@keyframes scroll {
+   0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-50%);
+  }
 }
