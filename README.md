@@ -40,7 +40,6 @@ O design do site foi cuidadosamente planejado para proporcionar uma experiência
 
 ##
 
-
 <section align="center" style="display: inline-block; ">
   <strong> Usado: </strong>  
   <img title="HTML5" align="center" alt="hugo-HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
